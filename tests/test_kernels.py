@@ -57,7 +57,9 @@ def test_rmsnorm(mod, n):
     run(cu.rmsnorm(mod, x, w, out, eps=1e-6))
     xf = x.float()
     ref = xf * torch.rsqrt(xf.pow(2).mean() + 1e-6) * w.float()
-    torch.testing.assert_close(out.float(), ref, atol=2e-2, rtol=1e-2)
+    # The only expected error is one FP16 rounding of the output (about 0.05%). A 0.2%
+    # tolerance still catches small mistakes: dividing by n - 1 instead of n is 0.8% at n = 64.
+    torch.testing.assert_close(out.float(), ref, atol=1e-3, rtol=2e-3)
 
 
 def test_silu_mul_and_add(mod):

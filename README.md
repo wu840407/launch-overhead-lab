@@ -72,6 +72,13 @@ past 64%: the call is too short to reach full bandwidth.
   including shapes that do not fill a block, and one test corrupts a weight row to make sure
   the comparison can fail. Another test checks that driver-API launches on PyTorch's capture
   stream are recorded into the graph.
+- **Do the tests catch bugs?** `tests/check_tests_can_fail.py` breaks the code in 11 ways,
+  one at a time (for example dropping the last 16-byte chunk of each GEMV row, keeping only
+  the first warp in a block reduction, or launching outside the capture stream), and checks
+  that the tests fail. All 11 are caught. The first run caught 10: RMSNorm dividing by n - 1
+  slipped through a 1% tolerance, which was then tightened to 0.2%. For vectors of a few
+  thousand elements that particular mistake is smaller than FP16 rounding, so only the small
+  test sizes can see it.
 - **Timing**: host wall clock with a synchronize for anything that includes CPU work, CUDA
   events for GPU-only work. Variants are interleaved A-B-B-A (or A-B-C-C-B-A) so slow drift
   and interference hit all of them. 15 trials per point; reports give the median and the
@@ -98,6 +105,9 @@ past 64%: the call is too short to reach full bandwidth.
   only (no quantized kernels), one GPU (no tensor-parallel all-reduce). It isolates weight
   bytes and kernel count; a real model has more kernels per layer.
 - **GeForce clocks cannot be locked**, which adds run-to-run noise to everything above.
+- **One machine.** Everything was measured on one RTX 3090 under WSL2; nothing has been
+  repeated on native Linux or another GPU. The max(CPU, GPU) model is checked on four step
+  configurations only. The correctness tests need a GPU, so they run locally, not in CI.
 
 ## Run it
 
@@ -106,6 +116,7 @@ Needs an NVIDIA GPU, Python 3.10+, and the packages in `requirements.txt` (no nv
 ```bash
 pip install -r requirements.txt
 python -m pytest                                   # correctness
+python tests/check_tests_can_fail.py               # the tests catch 11 deliberate bugs
 python bench/launch_overhead.py results/launch_overhead.json
 python bench/gemv_roofline.py results/gemv_roofline_run1.json
 python bench/decode_step.py results/decode_step_run1.json
@@ -124,6 +135,7 @@ bench/decode_step.py      synthetic decode step, eager vs graph
 bench/make_charts.py      the two charts
 bench/diagnose_variance.py  why absolute step times move between runs
 tests/test_kernels.py     correctness against PyTorch
+tests/check_tests_can_fail.py  breaks the code on purpose and checks the tests notice
 results/                  raw JSON for every number above
 ```
 
