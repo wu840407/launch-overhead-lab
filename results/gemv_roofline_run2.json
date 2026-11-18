@@ -1,0 +1,450 @@
+{
+  "device": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "sm": "8.6",
+    "sms": 82,
+    "cpu": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "wsl2": true,
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0"
+  },
+  "peak_gbps": 936.0,
+  "min_working_set_mb": 256,
+  "calls": 50,
+  "trials": 15,
+  "rows": [
+    {
+      "M": 4096,
+      "K": 4096,
+      "MB": 33.6,
+      "copies": 8,
+      "floor_us": 35.87,
+      "gpu_state": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 51,
+        "power_w": 128.7,
+        "util_pct": 76,
+        "used_mib": 2039
+      },
+      "read_sum": {
+        "us": {
+          "median": 41.90207958221436,
+          "min": 41.39008045196534,
+          "max": 53.800959587097175,
+          "n": 15
+        },
+        "gbps": 801.2,
+        "pct_of_peak": 85.6,
+        "best_pct_of_peak": 86.7
+      },
+      "ours": {
+        "us": {
+          "median": 42.80320167541504,
+          "min": 42.22976207733154,
+          "max": 242.29888916015625,
+          "n": 15
+        },
+        "gbps": 784.3,
+        "pct_of_peak": 83.8,
+        "best_pct_of_peak": 84.9
+      },
+      "torch_mv": {
+        "us": {
+          "median": 48.552961349487305,
+          "min": 46.94015979766846,
+          "max": 246.6783905029297,
+          "n": 15
+        },
+        "gbps": 691.4,
+        "pct_of_peak": 73.9,
+        "best_pct_of_peak": 76.4
+      }
+    },
+    {
+      "M": 11008,
+      "K": 4096,
+      "MB": 90.2,
+      "copies": 3,
+      "floor_us": 96.38,
+      "gpu_state": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 51,
+        "power_w": 187.9,
+        "util_pct": 82,
+        "used_mib": 2213
+      },
+      "read_sum": {
+        "us": {
+          "median": 105.86112022399904,
+          "min": 105.00096321105957,
+          "max": 136.20863914489746,
+          "n": 15
+        },
+        "gbps": 852.1,
+        "pct_of_peak": 91.0,
+        "best_pct_of_peak": 91.8
+      },
+      "ours": {
+        "us": {
+          "median": 106.22976303100586,
+          "min": 105.3222370147705,
+          "max": 128.3071994781494,
+          "n": 15
+        },
+        "gbps": 849.2,
+        "pct_of_peak": 90.7,
+        "best_pct_of_peak": 91.5
+      },
+      "torch_mv": {
+        "us": {
+          "median": 124.24575805664061,
+          "min": 123.02144050598145,
+          "max": 135.45472145080566,
+          "n": 15
+        },
+        "gbps": 726.0,
+        "pct_of_peak": 77.6,
+        "best_pct_of_peak": 78.3
+      }
+    },
+    {
+      "M": 4096,
+      "K": 11008,
+      "MB": 90.2,
+      "copies": 3,
+      "floor_us": 96.38,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 294.3,
+        "util_pct": 97,
+        "used_mib": 2213
+      },
+      "read_sum": {
+        "us": {
+          "median": 105.20575523376463,
+          "min": 105.02143859863281,
+          "max": 128.67584228515625,
+          "n": 15
+        },
+        "gbps": 857.4,
+        "pct_of_peak": 91.6,
+        "best_pct_of_peak": 91.8
+      },
+      "ours": {
+        "us": {
+          "median": 110.05375862121582,
+          "min": 109.42463874816895,
+          "max": 134.30656433105472,
+          "n": 15
+        },
+        "gbps": 819.7,
+        "pct_of_peak": 87.6,
+        "best_pct_of_peak": 88.1
+      },
+      "torch_mv": {
+        "us": {
+          "median": 115.11103630065918,
+          "min": 112.51711845397949,
+          "max": 127.48800277709961,
+          "n": 15
+        },
+        "gbps": 783.7,
+        "pct_of_peak": 83.7,
+        "best_pct_of_peak": 85.7
+      }
+    },
+    {
+      "M": 2048,
+      "K": 2048,
+      "MB": 8.4,
+      "copies": 32,
+      "floor_us": 8.97,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 303.4,
+        "util_pct": 70,
+        "used_mib": 2063
+      },
+      "read_sum": {
+        "us": {
+          "median": 16.69119954109192,
+          "min": 14.15168046951294,
+          "max": 21.790719032287598,
+          "n": 15
+        },
+        "gbps": 503.1,
+        "pct_of_peak": 53.7,
+        "best_pct_of_peak": 63.4
+      },
+      "ours": {
+        "us": {
+          "median": 16.15872025489807,
+          "min": 15.011839866638184,
+          "max": 23.18336009979248,
+          "n": 15
+        },
+        "gbps": 519.6,
+        "pct_of_peak": 55.5,
+        "best_pct_of_peak": 59.8
+      },
+      "torch_mv": {
+        "us": {
+          "median": 20.908799171447754,
+          "min": 16.834559440612793,
+          "max": 27.52511978149414,
+          "n": 15
+        },
+        "gbps": 401.6,
+        "pct_of_peak": 42.9,
+        "best_pct_of_peak": 53.3
+      }
+    },
+    {
+      "M": 5632,
+      "K": 2048,
+      "MB": 23.1,
+      "copies": 12,
+      "floor_us": 24.66,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 317.7,
+        "util_pct": 70,
+        "used_mib": 2047
+      },
+      "read_sum": {
+        "us": {
+          "median": 30.76096057891846,
+          "min": 29.45024013519287,
+          "max": 43.827199935913086,
+          "n": 15
+        },
+        "gbps": 750.4,
+        "pct_of_peak": 80.2,
+        "best_pct_of_peak": 83.7
+      },
+      "ours": {
+        "us": {
+          "median": 30.576639175415043,
+          "min": 29.122560024261475,
+          "max": 41.14431858062744,
+          "n": 15
+        },
+        "gbps": 755.0,
+        "pct_of_peak": 80.7,
+        "best_pct_of_peak": 84.7
+      },
+      "torch_mv": {
+        "us": {
+          "median": 32.31744050979614,
+          "min": 31.1296010017395,
+          "max": 48.312320709228516,
+          "n": 15
+        },
+        "gbps": 714.3,
+        "pct_of_peak": 76.3,
+        "best_pct_of_peak": 79.2
+      }
+    },
+    {
+      "M": 2048,
+      "K": 5632,
+      "MB": 23.1,
+      "copies": 12,
+      "floor_us": 24.66,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 326.6,
+        "util_pct": 74,
+        "used_mib": 2047
+      },
+      "read_sum": {
+        "us": {
+          "median": 29.798400402069092,
+          "min": 29.42912101745606,
+          "max": 43.95008087158203,
+          "n": 15
+        },
+        "gbps": 774.7,
+        "pct_of_peak": 82.8,
+        "best_pct_of_peak": 83.8
+      },
+      "ours": {
+        "us": {
+          "median": 29.552640914916992,
+          "min": 29.3068790435791,
+          "max": 33.622400760650635,
+          "n": 15
+        },
+        "gbps": 781.1,
+        "pct_of_peak": 83.5,
+        "best_pct_of_peak": 84.2
+      },
+      "torch_mv": {
+        "us": {
+          "median": 37.148799896240234,
+          "min": 35.93600034713745,
+          "max": 49.643521308898926,
+          "n": 15
+        },
+        "gbps": 621.4,
+        "pct_of_peak": 66.4,
+        "best_pct_of_peak": 68.6
+      }
+    },
+    {
+      "M": 16384,
+      "K": 4096,
+      "MB": 134.3,
+      "copies": 2,
+      "floor_us": 143.44,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 59,
+        "power_w": 340.6,
+        "util_pct": 98,
+        "used_mib": 2295
+      },
+      "read_sum": {
+        "us": {
+          "median": 163.55327606201172,
+          "min": 154.66496467590335,
+          "max": 195.78880310058594,
+          "n": 15
+        },
+        "gbps": 820.9,
+        "pct_of_peak": 87.7,
+        "best_pct_of_peak": 92.7
+      },
+      "ours": {
+        "us": {
+          "median": 155.48416137695312,
+          "min": 154.0505599975586,
+          "max": 220.6924819946289,
+          "n": 15
+        },
+        "gbps": 863.5,
+        "pct_of_peak": 92.3,
+        "best_pct_of_peak": 93.1
+      },
+      "torch_mv": {
+        "us": {
+          "median": 180.07680892944336,
+          "min": 170.4960060119629,
+          "max": 201.80992126464844,
+          "n": 15
+        },
+        "gbps": 745.6,
+        "pct_of_peak": 79.7,
+        "best_pct_of_peak": 84.1
+      }
+    },
+    {
+      "M": 32768,
+      "K": 4096,
+      "MB": 268.5,
+      "copies": 1,
+      "floor_us": 286.87,
+      "gpu_state": {
+        "sm_mhz": 1995,
+        "mem_mhz": 9501,
+        "temp_c": 60,
+        "power_w": 343.9,
+        "util_pct": 98,
+        "used_mib": 2572
+      },
+      "read_sum": {
+        "us": {
+          "median": 347.27935791015625,
+          "min": 326.1644744873047,
+          "max": 572.0883178710938,
+          "n": 15
+        },
+        "gbps": 773.2,
+        "pct_of_peak": 82.6,
+        "best_pct_of_peak": 88.0
+      },
+      "ours": {
+        "us": {
+          "median": 346.2348937988281,
+          "min": 325.0956726074219,
+          "max": 597.8726577758788,
+          "n": 15
+        },
+        "gbps": 775.5,
+        "pct_of_peak": 82.9,
+        "best_pct_of_peak": 88.2
+      },
+      "torch_mv": {
+        "us": {
+          "median": 374.16831970214844,
+          "min": 370.4198455810547,
+          "max": 650.2188873291017,
+          "n": 15
+        },
+        "gbps": 717.6,
+        "pct_of_peak": 76.7,
+        "best_pct_of_peak": 77.4
+      }
+    },
+    {
+      "M": 65536,
+      "K": 4096,
+      "MB": 537.0,
+      "copies": 1,
+      "floor_us": 573.73,
+      "gpu_state": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 59,
+        "power_w": 328.6,
+        "util_pct": 99,
+        "used_mib": 3329
+      },
+      "read_sum": {
+        "us": {
+          "median": 854.5670318603516,
+          "min": 677.9232025146483,
+          "max": 1159.6185302734377,
+          "n": 15
+        },
+        "gbps": 628.4,
+        "pct_of_peak": 67.1,
+        "best_pct_of_peak": 84.6
+      },
+      "ours": {
+        "us": {
+          "median": 836.9971466064453,
+          "min": 686.8787384033204,
+          "max": 1150.0742340087893,
+          "n": 15
+        },
+        "gbps": 641.6,
+        "pct_of_peak": 68.5,
+        "best_pct_of_peak": 83.5
+      },
+      "torch_mv": {
+        "us": {
+          "median": 892.8460693359375,
+          "min": 699.5948791503906,
+          "max": 1117.7983856201172,
+          "n": 15
+        },
+        "gbps": 601.5,
+        "pct_of_peak": 64.3,
+        "best_pct_of_peak": 82.0
+      }
+    }
+  ]
+}

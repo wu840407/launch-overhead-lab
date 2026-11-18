@@ -1,0 +1,203 @@
+{
+  "device": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "sm": "8.6",
+    "sms": 82,
+    "cpu": "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+    "wsl2": true,
+    "python": "3.12.3",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0"
+  },
+  "peak_gbps": 936.0,
+  "steps": 20,
+  "trials": 15,
+  "configs": {
+    "1B-class": {
+      "hidden": 2048,
+      "intermediate": 5632,
+      "layers": 22,
+      "weight_gb": 2.261,
+      "floor_ms": 2.416,
+      "driver": {
+        "kernels_per_step": 264,
+        "issue_ms": {
+          "median": 1.9312669755890965,
+          "min": 1.6956700710579753,
+          "max": 2.169261919334531,
+          "n": 15
+        },
+        "eager_ms": {
+          "median": 4.103614698396996,
+          "min": 3.928107750834897,
+          "max": 4.945745301665738,
+          "n": 15
+        },
+        "graph_ms": {
+          "median": 3.5139398532919586,
+          "min": 3.3850020496174693,
+          "max": 4.935840447433293,
+          "n": 15
+        },
+        "gpu_state": {
+          "before": {
+            "sm_mhz": 2010,
+            "mem_mhz": 9751,
+            "temp_c": 53,
+            "power_w": 156.0,
+            "util_pct": 31,
+            "used_mib": 4172
+          },
+          "after": {
+            "sm_mhz": 2010,
+            "mem_mhz": 9501,
+            "temp_c": 60,
+            "power_w": 332.8,
+            "util_pct": 96,
+            "used_mib": 4185
+          }
+        },
+        "eager_pct_of_floor": 58.9,
+        "graph_pct_of_floor": 68.7,
+        "eager_over_graph": 1.17,
+        "eager_minus_graph_us_per_kernel": 2.23
+      },
+      "torch": {
+        "kernels_per_step": 616,
+        "issue_ms": {
+          "median": 17.268204013817012,
+          "min": 16.802211990579963,
+          "max": 18.630581093020737,
+          "n": 15
+        },
+        "eager_ms": {
+          "median": 17.43936080019921,
+          "min": 17.20136979711242,
+          "max": 17.74962054914795,
+          "n": 15
+        },
+        "graph_ms": {
+          "median": 4.943780152825639,
+          "min": 4.584856296423823,
+          "max": 5.650238099042326,
+          "n": 15
+        },
+        "gpu_state": {
+          "before": {
+            "sm_mhz": 1215,
+            "mem_mhz": 5001,
+            "temp_c": 49,
+            "power_w": 73.8,
+            "util_pct": 53,
+            "used_mib": 4292
+          },
+          "after": {
+            "sm_mhz": 2010,
+            "mem_mhz": 9501,
+            "temp_c": 56,
+            "power_w": 224.9,
+            "util_pct": 46,
+            "used_mib": 4247
+          }
+        },
+        "eager_pct_of_floor": 13.9,
+        "graph_pct_of_floor": 48.9,
+        "eager_over_graph": 3.53,
+        "eager_minus_graph_us_per_kernel": 20.29
+      }
+    },
+    "7B-class": {
+      "hidden": 4096,
+      "intermediate": 11008,
+      "layers": 32,
+      "weight_gb": 12.953,
+      "floor_ms": 13.838,
+      "driver": {
+        "kernels_per_step": 384,
+        "issue_ms": {
+          "median": 3.9942320436239243,
+          "min": 3.76183504704386,
+          "max": 4.42062399815768,
+          "n": 15
+        },
+        "eager_ms": {
+          "median": 23.203490051673725,
+          "min": 19.71631069900468,
+          "max": 24.526939302450046,
+          "n": 15
+        },
+        "graph_ms": {
+          "median": 23.03633785340935,
+          "min": 21.060903754550964,
+          "max": 24.405351449968293,
+          "n": 15
+        },
+        "gpu_state": {
+          "before": {
+            "sm_mhz": 2010,
+            "mem_mhz": 9501,
+            "temp_c": 56,
+            "power_w": 229.9,
+            "util_pct": 99,
+            "used_mib": 15365
+          },
+          "after": {
+            "sm_mhz": 1995,
+            "mem_mhz": 9501,
+            "temp_c": 63,
+            "power_w": 345.5,
+            "util_pct": 99,
+            "used_mib": 15368
+          }
+        },
+        "eager_pct_of_floor": 59.6,
+        "graph_pct_of_floor": 60.1,
+        "eager_over_graph": 1.01,
+        "eager_minus_graph_us_per_kernel": 0.44
+      },
+      "torch": {
+        "kernels_per_step": 928,
+        "issue_ms": {
+          "median": 25.32966004218906,
+          "min": 24.658370995894074,
+          "max": 26.191544951871037,
+          "n": 15
+        },
+        "eager_ms": {
+          "median": 25.943254301091656,
+          "min": 25.255074800224975,
+          "max": 26.891836698632687,
+          "n": 15
+        },
+        "graph_ms": {
+          "median": 23.35426260251552,
+          "min": 21.64710894576274,
+          "max": 24.108079500729218,
+          "n": 15
+        },
+        "gpu_state": {
+          "before": {
+            "sm_mhz": 1995,
+            "mem_mhz": 9501,
+            "temp_c": 63,
+            "power_w": 329.9,
+            "util_pct": 92,
+            "used_mib": 15392
+          },
+          "after": {
+            "sm_mhz": 1995,
+            "mem_mhz": 9501,
+            "temp_c": 65,
+            "power_w": 344.9,
+            "util_pct": 91,
+            "used_mib": 15392
+          }
+        },
+        "eager_pct_of_floor": 53.3,
+        "graph_pct_of_floor": 59.3,
+        "eager_over_graph": 1.11,
+        "eager_minus_graph_us_per_kernel": 2.79
+      }
+    }
+  }
+}

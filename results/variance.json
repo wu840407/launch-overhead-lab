@@ -1,0 +1,366 @@
+{
+  "rows": [
+    {
+      "t_s": 0.9,
+      "step_ms": 20.46,
+      "gemv_us": 106.6,
+      "gemv_gbps": 845.6,
+      "before": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 50,
+        "power_w": 143.3,
+        "util_pct": 98,
+        "used_mib": 15303
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 318.5,
+        "util_pct": 100,
+        "used_mib": 15303
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 318.5,
+        "util_pct": 100,
+        "used_mib": 15303
+      }
+    },
+    {
+      "t_s": 6.7,
+      "step_ms": 16.46,
+      "gemv_us": 107.0,
+      "gemv_gbps": 842.4,
+      "before": {
+        "sm_mhz": 1860,
+        "mem_mhz": 9501,
+        "temp_c": 51,
+        "power_w": 132.0,
+        "util_pct": 5,
+        "used_mib": 15284
+      },
+      "mid": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 267.3,
+        "util_pct": 100,
+        "used_mib": 15279
+      },
+      "after": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 267.3,
+        "util_pct": 100,
+        "used_mib": 15279
+      }
+    },
+    {
+      "t_s": 12.7,
+      "step_ms": 21.33,
+      "gemv_us": 106.3,
+      "gemv_gbps": 848.6,
+      "before": {
+        "sm_mhz": 330,
+        "mem_mhz": 5001,
+        "temp_c": 49,
+        "power_w": 86.9,
+        "util_pct": 5,
+        "used_mib": 15306
+      },
+      "mid": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 239.4,
+        "util_pct": 100,
+        "used_mib": 15306
+      },
+      "after": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 260.2,
+        "util_pct": 95,
+        "used_mib": 15306
+      }
+    },
+    {
+      "t_s": 18.8,
+      "step_ms": 23.56,
+      "gemv_us": 109.7,
+      "gemv_gbps": 821.8,
+      "before": {
+        "sm_mhz": 360,
+        "mem_mhz": 5001,
+        "temp_c": 49,
+        "power_w": 86.9,
+        "util_pct": 18,
+        "used_mib": 15280
+      },
+      "mid": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 56,
+        "power_w": 248.1,
+        "util_pct": 100,
+        "used_mib": 15276
+      },
+      "after": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 56,
+        "power_w": 269.3,
+        "util_pct": 100,
+        "used_mib": 15276
+      }
+    },
+    {
+      "t_s": 24.9,
+      "step_ms": 18.84,
+      "gemv_us": 105.4,
+      "gemv_gbps": 855.8,
+      "before": {
+        "sm_mhz": 405,
+        "mem_mhz": 405,
+        "temp_c": 48,
+        "power_w": 52.5,
+        "util_pct": 9,
+        "used_mib": 15280
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 229.0,
+        "util_pct": 100,
+        "used_mib": 15286
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 256.7,
+        "util_pct": 91,
+        "used_mib": 15286
+      }
+    },
+    {
+      "t_s": 30.9,
+      "step_ms": 18.49,
+      "gemv_us": 109.9,
+      "gemv_gbps": 820.9,
+      "before": {
+        "sm_mhz": 450,
+        "mem_mhz": 810,
+        "temp_c": 47,
+        "power_w": 48.8,
+        "util_pct": 12,
+        "used_mib": 15318
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 226.9,
+        "util_pct": 100,
+        "used_mib": 15303
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 253.1,
+        "util_pct": 93,
+        "used_mib": 15303
+      }
+    },
+    {
+      "t_s": 36.9,
+      "step_ms": 19.35,
+      "gemv_us": 106.3,
+      "gemv_gbps": 848.2,
+      "before": {
+        "sm_mhz": 405,
+        "mem_mhz": 405,
+        "temp_c": 47,
+        "power_w": 49.0,
+        "util_pct": 33,
+        "used_mib": 15285
+      },
+      "mid": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 248.8,
+        "util_pct": 100,
+        "used_mib": 15285
+      },
+      "after": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 58,
+        "power_w": 248.8,
+        "util_pct": 100,
+        "used_mib": 15285
+      }
+    },
+    {
+      "t_s": 43.1,
+      "step_ms": 19.48,
+      "gemv_us": 105.9,
+      "gemv_gbps": 851.4,
+      "before": {
+        "sm_mhz": 420,
+        "mem_mhz": 405,
+        "temp_c": 47,
+        "power_w": 49.5,
+        "util_pct": 39,
+        "used_mib": 15285
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 227.7,
+        "util_pct": 100,
+        "used_mib": 15285
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 254.2,
+        "util_pct": 94,
+        "used_mib": 15285
+      }
+    },
+    {
+      "t_s": 49.1,
+      "step_ms": 19.1,
+      "gemv_us": 106.0,
+      "gemv_gbps": 851.0,
+      "before": {
+        "sm_mhz": 405,
+        "mem_mhz": 810,
+        "temp_c": 48,
+        "power_w": 72.7,
+        "util_pct": 20,
+        "used_mib": 15285
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 226.3,
+        "util_pct": 100,
+        "used_mib": 15285
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 251.9,
+        "util_pct": 93,
+        "used_mib": 15285
+      }
+    },
+    {
+      "t_s": 55.1,
+      "step_ms": 19.23,
+      "gemv_us": 106.2,
+      "gemv_gbps": 849.1,
+      "before": {
+        "sm_mhz": 390,
+        "mem_mhz": 810,
+        "temp_c": 48,
+        "power_w": 74.5,
+        "util_pct": 27,
+        "used_mib": 15249
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 251.8,
+        "util_pct": 95,
+        "used_mib": 15249
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 251.8,
+        "util_pct": 95,
+        "used_mib": 15250
+      }
+    },
+    {
+      "t_s": 61.1,
+      "step_ms": 19.42,
+      "gemv_us": 109.8,
+      "gemv_gbps": 821.3,
+      "before": {
+        "sm_mhz": 360,
+        "mem_mhz": 810,
+        "temp_c": 48,
+        "power_w": 73.4,
+        "util_pct": 33,
+        "used_mib": 15256
+      },
+      "mid": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 250.3,
+        "util_pct": 96,
+        "used_mib": 15256
+      },
+      "after": {
+        "sm_mhz": 2010,
+        "mem_mhz": 9501,
+        "temp_c": 57,
+        "power_w": 250.3,
+        "util_pct": 96,
+        "used_mib": 15256
+      }
+    },
+    {
+      "t_s": 67.3,
+      "step_ms": 19.26,
+      "gemv_us": 105.8,
+      "gemv_gbps": 852.3,
+      "before": {
+        "sm_mhz": 480,
+        "mem_mhz": 810,
+        "temp_c": 49,
+        "power_w": 73.2,
+        "util_pct": 21,
+        "used_mib": 15256
+      },
+      "mid": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 55,
+        "power_w": 254.8,
+        "util_pct": 96,
+        "used_mib": 15256
+      },
+      "after": {
+        "sm_mhz": 2025,
+        "mem_mhz": 9501,
+        "temp_c": 55,
+        "power_w": 254.8,
+        "util_pct": 96,
+        "used_mib": 15256
+      }
+    }
+  ],
+  "kernels_per_step": 384,
+  "weight_gb": 12.95253504
+}
